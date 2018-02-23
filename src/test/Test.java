@@ -25,6 +25,7 @@ public class Test {
         System.out.println("номер:");
         int unmber = inside.nextInt();
         input market = goods.get(unmber);
+        
     }
     private static void printTable(String row1,String row2,String row3,String row4,String row5) {
         System.out.print(row1);

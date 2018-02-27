@@ -19,7 +19,7 @@ public class input {
     }
     public String nameOld(){
         String nam = name;
-        System.out.println("имя:"+ nam);
+        System.out.println("имя:" + nam);
         return name;
     }
     public String nameN(String nameNew){

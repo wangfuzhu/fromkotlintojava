@@ -64,7 +64,7 @@ public class input {
     public int numberCha(int nu){
         int sum = number + nu;
         if (sum >= 0){
-            System.out.println("сейчас количество:"+sum);
+            System.out.println("новое количество:"+sum);
             return sum;
         }else{
             System.out.println("нету");

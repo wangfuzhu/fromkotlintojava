@@ -27,7 +27,7 @@ public class Test {
         int unmber = inside.nextInt();
         input market = goods.get(unmber);
         market.nameOld();
-        System.out.println("изменение имя:");
+        System.out.println("изменение имя:(если не измемение .написать не измемение!");
         String nameNew = inside.next();
         market.nameN(nameNew);
         market.nNumber();
@@ -43,22 +43,26 @@ public class Test {
     }
     private static void printTable(String row1,String row2,String row3,String row4,String row5) {
         System.out.print(row1);
-        int times=12;
-        if (row2!="name") {
-            times=5;
+        int times = 10;
+        if (row2 != "name") {
+            times = 5;
         }
-        for (int i = 0; i < times; i++) {
+        for (int i = 0; i < 15 - row2.length();i++) {
             System.out.print(" ");
         }
         System.out.print(row2);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10 - row3.length();i++) {
             System.out.print(" ");
         }
         System.out.print(row3);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10 - row4.length();i++) {
             System.out.print(" ");
         }
         System.out.print(row4);
+        for (int i = 0; i < 10 - row5.length();i++) {
+            System.out.print(" ");
+        }
+        System.out.print(row5);
         System.out.println("\n");
 
     }

@@ -27,7 +27,7 @@ public class Test {
         int unmber = inside.nextInt();
         input market = goods.get(unmber);
         market.nameOld();
-        System.out.println("изменение имя:(если не измемение .написать не измемение!");
+        System.out.println("изменение имя:(если не измемение .написать не измемение!)");
         String nameNew = inside.next();
         market.nameN(nameNew);
         market.nNumber();

@@ -17,30 +17,6 @@ public class input {
         this.bigPrice = bigPrice;
         this.smallPrice = smallPrice;
     }
-    public void printName(String name){
-        this.name = name;
-    }
-    public String getName(){
-        return name;
-    }
-    public void printiNu(int number){
-        this.number = number;
-    }
-    public int geyNu(){
-        return number;
-    }
-    public void printBig(int bigPrice){
-        this.bigPrice = bigPrice;
-    }
-    public int getBig() {
-        return bigPrice;
-    }
-    public void printSma(int smallPrice){
-        this.bigPrice = bigPrice;
-    }
-    public int getSma() {
-        return smallPrice;
-    }
     public String nameOld(){
         String nam = name;
         System.out.println("имя:"+ nam);

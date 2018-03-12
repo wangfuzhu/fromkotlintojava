@@ -42,7 +42,7 @@ public class test {
     }
         @org.junit.Test
         public void getname() throws Exception {
-            assertEquals("Кока-кола" , goods.get(1));
+            assertEquals("Кока-кола" , goods.get(1).getName());
         }
     private static void printTable(String row1,String row2,String row3,String row4,String row5) {
         System.out.print(row1);

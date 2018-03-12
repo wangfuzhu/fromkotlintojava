@@ -17,12 +17,12 @@ public class input {
         this.bigPrice = bigPrice;
         this.smallPrice = smallPrice;
     }
-    public String nameOld(){
+    public String getName(){
         String nam = name;
-        System.out.println("имя:" + nam);
+        System.out.println("имя:"+ nam);
         return name;
     }
-    public String nameN(String nameNew){
+    public String setName(String nameNew){
         String namN = "";
         if (nameNew == "не изменение"){
             System.out.println("новый имя:"+ name);
@@ -32,12 +32,12 @@ public class input {
             return namN;
         }
     }
-    public int nNumber(){
+    public int getNumber(){
         int nNum = number;
         System.out.println("количество:"+ nNum);
         return number;
     }
-    public int numberCha(int nu){
+    public int setNumber(int nu){
         int sum = number + nu;
         if (sum >= 0){
             System.out.println("новое количество:"+sum);
@@ -47,11 +47,11 @@ public class input {
             return sum;
         }
     }
-    public String moneySum(){
+    public String getMoney(){
         System.out.println(bigPrice+"рублей"+smallPrice+"копеек");
         return "";
     }
-    public String money(double moneyCh){
+    public String setMoney(double moneyCh){
         double big = bigPrice;
         double small = smallPrice;
         double moneyN = big + small / 100;

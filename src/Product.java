@@ -1,19 +1,19 @@
 public class Product {
-    private String price;
+    private double price;
     private int id;
     private String name;
     private int quantity;
 
-    public Product(int id,String name,int quantity, String price){
+    public Product(int id,String name,int quantity, double price){
         this.id = id;
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
-    public String getPrice(){
+    public Double getPrice(){
         return price;
     }
-    public void setPrice(String price){
+    public void setPrice(double price){
         this.price = price;
     }
     public int getId(){

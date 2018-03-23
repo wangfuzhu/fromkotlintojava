@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.text.DecimalFormat;
 
 public class Shop{
-    ArrayList<Product> products = new ArrayList<Product>();
-    public void add(int id, String name, int quantity, String price){
+    public ArrayList<Product> products = new ArrayList<Product>();
+    public void add(int id, String name, int quantity, double price){
         products.add(new Product(id,name,quantity,price));
     }
-    public void change(int id,String name, int quantity, String price){
+    public void change(int id,String name, int quantity, double price){
         for (int i = 0;
              i < products.size();
              i++){
@@ -16,7 +17,7 @@ public class Shop{
             }
         }
     }
-    public String getNameFI(int id){
+    public String getName(int id){
         // get name from id
         for (int i =0;
              i < products.size();
@@ -27,18 +28,22 @@ public class Shop{
         }
         return "";
     }
-    public String getPriceFI(int id){
+    public String getPrice(int id, int num){
         //get price from id
         for (int i=0;
                 i < products.size();
                 i++){
             if (products.get(i).getId() == id){
-                return products.get(i).getPrice();
+                double sum = products.get(i).getPrice() * num;
+                double small = sum*100;
+                int moneySmall = (int)small - (int)sum *100;
+                DecimalFormat tow  = new DecimalFormat("######0");
+                return tow.format(sum)+"рублей"+moneySmall+"копеек";
             }
         }
         return "0 рублевый 0 копеек";
     }
-    public int getQuantityFI(int id){
+    public int getQuantity(int id){
         //get quantity from id
         for (int i = 0; i < products.size(); i++){
             if (products.get(i).getId() == id){
